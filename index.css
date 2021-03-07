@@ -1,0 +1,163 @@
+body{
+    background-color:#254D6C;
+    
+
+}
+
+h1{
+    color:	#D2E4E5;
+    padding-left: 380px;
+    margin-top: 15px;
+}
+
+table{
+    padding-top: 30px;
+    padding-left: 150px;
+}
+td{
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 2px;
+    border-color: #D2E4E5;
+}
+.dates{
+   font-size: 20px;
+   color: #F0941B
+   
+}
+
+.name{
+    font-size: 20px;
+    color: #D2E4E5
+}
+
+
+tr input { 
+    width: 0px;
+    height: 0px;
+}
+
+input[type="checkbox"] {
+    height: 4px;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-left: 10px;
+  padding-top: -5px;
+  margin-bottom: 20px;
+  font: 14px/20px 'Open Sans', Arial, sans-serif;
+  color: #ddd;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type="checkbox"] :last-child { margin-bottom: 0; }
+
+input[type="checkbox"]:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #6cc0e5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+tr input[type="checkbox"]:checked:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.counter{
+    padding-left: 35px;
+    color: #D2E4E5;
+}
+
+.practic{
+    position: relative;
+    display: inline-block;
+}
+
+.practic .pr{
+    visibility: hidden;
+    width: 60px;
+    background-color:#254D6C;
+    color: #F0941B;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    margin-left: -54px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border: 1px solid;
+    font-size: 15px;
+}
+
+.theoreal .th{
+    visibility: hidden;
+    width: 80px;
+    background-color:#254D6C;
+    color: #F0941B;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    margin-top: -43px;
+    margin-left: -65px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border: 1px solid;
+    font-size: 15px;
+}
+
+
+.practic .pr::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #F0941B transparent transparent transparent;
+}
+
+
+.theoreal .th::after{
+    content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #F0941B transparent transparent transparent;
+}
+
+.practic:hover .pr{
+    visibility: visible;
+    opacity: 1;
+}
+
+.theoreal:hover .th{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
